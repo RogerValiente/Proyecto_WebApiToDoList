@@ -112,7 +112,7 @@ INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaI
 GO
 INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (6, N'Lavar y guardar los platos', N'Roger Meza', N'En Proceso', CAST(N'2022-08-15T00:00:00' AS SmallDateTime), CAST(N'2022-08-30T00:00:00' AS SmallDateTime))
 GO
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (7 N'Trapear los pisos', N'Laura Aldana', N'Completada', CAST(N'2022-08-24T00:00:00' AS SmallDateTime), CAST(N'2022-08-31T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (7, N'Trapear los pisos', N'Laura Aldana', N'Completada', CAST(N'2022-08-24T00:00:00' AS SmallDateTime), CAST(N'2022-08-31T00:00:00' AS SmallDateTime))
 GO
 INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (8, N'Limpiar el lavabo', N'Laura Aldana', N'En Proceso', CAST(N'2022-08-22T00:00:00' AS SmallDateTime), CAST(N'2022-08-22T00:00:00' AS SmallDateTime))
 GO
