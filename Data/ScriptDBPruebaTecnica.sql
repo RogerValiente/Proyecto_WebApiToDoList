@@ -1,6 +1,6 @@
-﻿USE [master]
+USE [master]
 GO
-/****** Object:  Database [PruebaTecnica]    Script Date: 8/08/2022 12:48:15 a. m. ******/
+/****** Object:  Database [PruebaTecnica]    Script Date: 8/08/2022 1:49:37 a. m. ******/
 CREATE DATABASE [PruebaTecnica]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -80,7 +80,7 @@ ALTER DATABASE [PruebaTecnica] SET QUERY_STORE = OFF
 GO
 USE [PruebaTecnica]
 GO
-/****** Object:  Table [dbo].[ListaTarea]    Script Date: 8/08/2022 12:48:16 a. m. ******/
+/****** Object:  Table [dbo].[ListaTarea]    Script Date: 8/08/2022 1:49:37 a. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -100,22 +100,21 @@ CREATE TABLE [dbo].[ListaTarea](
 GO
 SET IDENTITY_INSERT [dbo].[ListaTarea] ON 
 
-
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (1, N'Roger Meza', N'Asignada', N'14/08/2022 0:00', N'2022-08-24T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (2, N'Laura Aldana', N'Asignada', N'7/08/2022 0:00', N'2022-08-07T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (3, N'Jeronimo Meza', N'En Proceso', N'8/08/2022 0:00', N'2022-08-08T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (4, N'Roger Meza', N'Pendiente', N'24/08/2022 0:00', N'2022-08-24T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (5, N'Jeronimo Meza', N'En Proceso', N'30/08/2022 0:00', N'2022-08-31T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (6, N'Roger Meza', N'En Proceso', N'15/08/2022 0:00', N'2022-08-30T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (7, N'Laura Aldana', N'Completada', N'24/08/2022 0:00', N'2022-08-31T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (8, N'Laura Aldana', N'En Proceso', N'22/08/2022 0:00', N'2022-08-22T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (9, N'Jeronimo Meza', N'Pendiente', N'22/08/2022 0:00', N'2022-09-08T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (10, N'Laura Aldana', N'En Proceso', N'8/08/2022 0:00', N'2022-08-16T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (11, N'Jeronimo Meza', N'Completada', N'8/08/2022 0:00',N'2022-08-23T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (12, N'Roger Meza', N'Asiganada', N'8/08/2022 0:00',  N'2022-08-15T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (13, N'Jeronimo Meza', N'Asignada', N'7/08/2022 0:00', N'2022-09-01T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (14, N'Jeronimo Meza', N'Asignada', N'1/08/2022 0:00', N'2022-08-30T00:00:00')
-INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (15, N'Roger Meza', N'Completada', N'8/08/2022 0:00', N'2022-08-30T00:00:00')
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (1, N'Roger Meza', N'Asignada', N'14/08/2022 0:00', CAST(N'2022-08-24T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (2, N'Laura Aldana', N'Asignada', N'7/08/2022 0:00', CAST(N'2022-08-07T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (3, N'Jeronimo Meza', N'En Proceso', N'8/08/2022 0:00', CAST(N'2022-08-08T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (4, N'Roger Meza', N'Pendiente', N'24/08/2022 0:00', CAST(N'2022-08-24T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (5, N'Jeronimo Meza', N'En Proceso', N'30/08/2022 0:00', CAST(N'2022-08-31T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (6, N'Roger Meza', N'En Proceso', N'15/08/2022 0:00', CAST(N'2022-08-30T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (7, N'Laura Aldana', N'Completada', N'24/08/2022 0:00', CAST(N'2022-08-31T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (8, N'Laura Aldana', N'En Proceso', N'22/08/2022 0:00', CAST(N'2022-08-22T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (9, N'Jeronimo Meza', N'Pendiente', N'22/08/2022 0:00', CAST(N'2022-09-08T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (10, N'Laura Aldana', N'En Proceso', N'8/08/2022 0:00', CAST(N'2022-08-16T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (11, N'Jeronimo Meza', N'Completada', N'8/08/2022 0:00', CAST(N'2022-08-23T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (12, N'Roger Meza', N'Asiganada', N'8/08/2022 0:00', CAST(N'2022-08-15T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (13, N'Jeronimo Meza', N'Asignada', N'7/08/2022 0:00', CAST(N'2022-09-01T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (14, N'Jeronimo Meza', N'Asignada', N'1/08/2022 0:00', CAST(N'2022-08-30T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
+INSERT [dbo].[ListaTarea] ([ID], [TituloTarea], [Responsable], [Estado], [FechaInicial], [FechaFinal]) VALUES (15, N'Roger Meza', N'Completada', N'8/08/2022 0:00', CAST(N'2022-08-30T00:00:00' AS SmallDateTime), CAST(N'2022-08-24T00:00:00' AS SmallDateTime))
 SET IDENTITY_INSERT [dbo].[ListaTarea] OFF
 GO
 USE [master]
